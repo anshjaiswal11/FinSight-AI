@@ -59,7 +59,6 @@ const FinancialAIAgent = () => {
   const [activeTab, setActiveTab] = useState('input');
   const [error, setError] = useState(null);
 
-  // NOTE: Replace "YOUR_API_KEY_HERE" with your actual API key.
   const YOUR_OPENROUTER_API_KEY = import.meta.env.VITE_API_URL;
 
   const generateAnalysis = async () => {
@@ -229,7 +228,7 @@ Ensure all values are populated based on your analysis. The sum of portfolioAllo
             </div>
              <div className="flex items-center space-x-2 text-sm text-slate-600">
                 <Sparkles className="w-4 h-4" />
-                <span>Powered by AI via OpenRouter</span>
+                <span>Powered by CodeLift</span>
             </div>
           </div>
         </div>
@@ -650,7 +649,7 @@ Ensure all values are populated based on your analysis. The sum of portfolioAllo
       <div className="bg-white/50 backdrop-blur-md border-t border-blue-100 py-8 mt-16">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <p className="text-slate-600 text-sm">
-            Built with React.js • Powered by AI via OpenRouter • 
+            Built with ❤️ • Powered by CodeLift •
             <span className="text-blue-600 font-medium"> FinSight AI</span>
           </p>
         </div>
