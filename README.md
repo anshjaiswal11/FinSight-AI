@@ -1,12 +1,81 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# FinSight-AI
 
-Currently, two official plugins are available:
+FinSight-AI is a modern React + Vite web application that provides AI-powered financial and stock analysis, tailored for Indian and US markets. It leverages OpenRouter AI for deep investment insights and Alpha Vantage for real-time stock data.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Personalized Investment Analysis:**  
+	Users can input their investment amount, goal, time horizon, and risk tolerance to receive a detailed, AI-generated financial plan, including portfolio allocation, return projections, fund recommendations, tax insights, and next steps.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Stock Analysis:**  
+	Search for Indian ADRs and US stocks. Get real-time data, technical/fundamental analysis, and actionable AI insights. Download comprehensive PDF reports.
+
+- **Modern UI:**  
+	Built with Tailwind CSS and Recharts for beautiful, responsive data visualizations.
+
+- **Routing:**  
+	Uses React Router DOM for seamless navigation between the AI Analysis and Stock Analysis pages.
+
+## Project Structure
+
+```
+src/
+	App.jsx                # Main app with React Router setup
+	main.jsx               # Entry point, renders <App />
+	App.css, index.css     # Tailwind CSS imports
+	pages/
+		AIAnalysisText.jsx   # AI-powered investment analysis form and results
+		StockAnalysis.jsx    # Stock search, charting, and AI stock analysis
+	assets/                # (Your static assets)
+public/                  # Static files
+```
+
+## Getting Started
+
+1. **Install dependencies:**
+	 ```sh
+	 npm install
+	 ```
+
+2. **Set up environment variables:**
+	 - Create a `.env` file in the project root.
+	 - Add your OpenRouter API key:
+		 ```
+		 VITE_API_URL=your_openrouter_api_key
+		 ```
+
+3. **Run the development server:**
+	 ```sh
+	 npm run dev
+	 ```
+
+4. **Open the app:**
+	 - Visit [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Usage
+
+- **AI Analysis:**  
+	Go to `/` (Home). Fill out the investment form and click "Generate AI Analysis" for a personalized plan.
+
+- **Stock Analysis:**  
+	Go to `/stock`. Search for a stock symbol (e.g., `INFY`, `AAPL`). View charts, metrics, and generate an AI-powered stock report.
+
+## Dependencies
+
+- React, Vite
+- react-router-dom
+- recharts
+- lucide-react
+- tailwindcss
+- Alpha Vantage API (for stock data)
+- OpenRouter AI API (for AI analysis)
+
+## Customization
+
+- Update the list of supported stocks or add new analysis features in `pages/AIAnalysisText.jsx` and `pages/StockAnalysis.jsx`.
+- Tailwind CSS is used for styling; customize in `App.css` and `index.css`.
+
+## License
+
+MIT
