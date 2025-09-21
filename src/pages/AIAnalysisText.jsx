@@ -59,7 +59,7 @@ const FinancialAIAgent = () => {
   const [activeTab, setActiveTab] = useState('input');
   const [error, setError] = useState(null);
 
-  const YOUR_OPENROUTER_API_KEY = import.meta.env.VITE_API_URL;
+  const YOUR_OPENROUTER_API_KEY = import.meta.env.VITE_API_UR;
 
   const generateAnalysis = async () => {
     setLoading(true);
