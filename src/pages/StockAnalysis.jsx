@@ -23,7 +23,7 @@ const StockAnalysis = () => {
   const [searchSuggestions, setSearchSuggestions] = useState([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
 
-  const ALPHA_VANTAGE_API_KEY = '35WV7APIT7KF99AK';
+  const ALPHA_VANTAGE_API_KEY = import.meta.env.VITE_API_KEY;
   const OPENROUTER_API_KEY = import.meta.env.VITE_API_UR;
   const [exchangeRate, setExchangeRate] = useState(83.5);
 

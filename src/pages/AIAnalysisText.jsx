@@ -91,7 +91,7 @@ The user's goal is ${formData.goal.replace('-', ' ')}. Please provide a suitable
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          model: 'deepseek/deepseek-r1-0528-qwen3-8b:free',
+          model: 'deepseek/deepseek-chat-v3.1:free',
           messages: [
             {
               role: 'system',
